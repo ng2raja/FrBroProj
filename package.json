@@ -8,8 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "lib:build" : "ng build fr-dropdown --prod"
-   
+    "lib:build": "ng build fr-dropdown --prod"
   },
   "private": false,
   "dependencies": {
