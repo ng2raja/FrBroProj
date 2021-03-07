@@ -1,0 +1,11 @@
+{
+  "name": "fr-dropdown-pro",
+  "version": "0.0.3",
+  "peerDependencies": {
+    "@angular/common": "^11.0.9",
+    "@angular/core": "^11.0.9"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  }
+}

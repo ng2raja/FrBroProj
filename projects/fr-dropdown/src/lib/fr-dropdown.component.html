@@ -1,0 +1,21 @@
+  <!-- <p>
+    fr-dropdown works! new raja {{Raja}}
+  </p>
+  <input type="text" (click)="showDropdown()" (keyup)="filterFunction($event.target.value)">
+
+  <br>
+  <br> -->
+
+  <div class="dropdown">
+    <!--<button onclick="myFunction()" class="dropbtn">Dropdown</button>-->
+    <input (click)="showDropdown()" type="text" placeholder="{{getPlaceHolderString()}}" id="myInput" (keyup)="filterFunction($event)"> 
+    <span (click)="clearAllSelction()" class="clearcls">X </span>
+
+    <div [ngStyle]="{'display': (isDropdownOpen? 'block' : 'none')}" id="myDropdown" class="dropdown-content">
+      <div *ngFor="let item of options" class="child">
+          <input *ngIf="show" type="checkbox" (click)="filterFunction($event.target.value);onChangeAction(item)">
+            {{item[optionLabel]}}
+      </div>
+      
+    </div>
+  </div>
